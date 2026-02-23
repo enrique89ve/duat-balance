@@ -1,0 +1,67 @@
+<main class="app-shell">
+	<header class="hero">
+		<img src="/coin.png" alt="DUAT token logo" class="coin-logo" width="64" height="64" />
+		<p class="eyebrow">DUAT Token Analysis</p>
+		<h1>Snapshot Analytics</h1>
+		<p class="subtitle">Airdrop claim patterns, holder retention, and supply distribution from Hive blockchain data.</p>
+		<nav aria-label="Site navigation">
+			<a href="/" class="site-link">&larr; Back to Balance Tracker</a>
+		</nav>
+	</header>
+
+	<section class="panel" id="overviewPanel">
+		<h2>Token Overview</h2>
+		<div class="info-grid" id="overviewGrid">
+			<p class="placeholder">Loading snapshot data...</p>
+		</div>
+	</section>
+
+	<section class="panel" id="claimsPanel">
+		<h2>Airdrop Claims</h2>
+		<div class="table-wrap">
+			<table>
+				<caption class="sr-only">DUAT airdrop claims statistics</caption>
+				<thead>
+					<tr>
+						<th scope="col">Metric</th>
+						<th scope="col" class="number">Value</th>
+					</tr>
+				</thead>
+				<tbody id="claimsBody"></tbody>
+			</table>
+			<p id="claimsEmpty" class="placeholder">No airdrop claim data found.</p>
+		</div>
+	</section>
+
+	<section class="panel" id="findingsPanel">
+		<h2>Summary</h2>
+		<ul class="findings-list" id="findingsList">
+			<li class="placeholder">Loading...</li>
+		</ul>
+	</section>
+
+	<section class="panel" id="holdersPanel">
+		<div class="panel-head">
+			<h2>Top Holders</h2>
+			<p id="holdersMeta" class="meta" aria-live="polite"></p>
+		</div>
+		<div class="table-wrap">
+			<table>
+				<caption class="sr-only">Top DUAT token holders by total balance</caption>
+				<thead>
+					<tr>
+						<th scope="col" class="rank">#</th>
+						<th scope="col">Account</th>
+						<th scope="col" class="number col-balance" title="Liquid tokens available for transfer or trading">Balance</th>
+						<th scope="col" class="number col-powered" title="Tokens staked for influence weight">Powered Up</th>
+						<th scope="col" class="number col-gov" title="Tokens locked in governance voting">Gov</th>
+						<th scope="col" class="number total" title="Sum of liquid, staked, and governance balances">Total</th>
+						<th scope="col" class="col-expand"></th>
+					</tr>
+				</thead>
+				<tbody id="holdersBody"></tbody>
+			</table>
+			<p id="holdersEmpty" class="placeholder">No holder data found.</p>
+		</div>
+	</section>
+</main>

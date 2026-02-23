@@ -1,0 +1,51 @@
+<main class="app-shell">
+	<header class="hero">
+		<img src="/coin.png" alt="DUAT token logo" class="coin-logo" width="64" height="64" />
+		<p class="eyebrow">DUAT Token</p>
+		<h1>Balance Tracker</h1>
+		<p class="subtitle">Browse token holder balances and staking data from the DUAT Honeycomb layer on Hive.</p>
+		<nav aria-label="Site navigation">
+			<a href="/info" class="site-link">View Snapshot Analytics &rarr;</a>
+		</nav>
+	</header>
+
+	<section class="panel">
+		<h2>Account Lookup</h2>
+		<div class="user-row">
+			<label for="searchInput" class="sr-only">Search by Hive username</label>
+			<input id="searchInput" type="text" placeholder="Enter a Hive username..." />
+			<button id="searchButton">Search</button>
+		</div>
+		<div id="searchResults" class="search-results hidden" aria-live="polite"></div>
+	</section>
+
+	<section class="panel">
+		<div class="panel-head">
+			<h2>Holders Snapshot</h2>
+			<p id="snapshotMeta" class="meta" aria-live="polite">Loading snapshot data...</p>
+		</div>
+		<div class="table-wrap">
+			<table>
+				<caption class="sr-only">DUAT token holders ranked by total balance</caption>
+				<thead>
+					<tr>
+						<th scope="col" class="rank">#</th>
+						<th scope="col">Account</th>
+						<th scope="col" class="number col-balance" title="Liquid tokens available for transfer or trading">Balance</th>
+						<th scope="col" class="number col-powered" title="Tokens staked for influence weight">Powered Up</th>
+						<th scope="col" class="number col-gov" title="Tokens locked in governance voting">Gov</th>
+						<th scope="col" class="number total" title="Sum of liquid, staked, and governance balances">Total</th>
+						<th scope="col" class="col-expand"></th>
+					</tr>
+				</thead>
+				<tbody id="holdersBody"></tbody>
+			</table>
+			<p id="holdersEmpty" class="placeholder">Fetching holder balances...</p>
+		</div>
+		<div id="pagination" class="pagination hidden">
+			<button id="prevButton" class="ghost" disabled aria-label="Previous page">&#8592; Prev</button>
+			<span id="pageIndicator" class="page-indicator" aria-live="polite">Page 1 of 1</span>
+			<button id="nextButton" class="ghost" disabled aria-label="Next page">Next &#8594;</button>
+		</div>
+	</section>
+</main>
