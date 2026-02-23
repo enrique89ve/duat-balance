@@ -147,9 +147,9 @@ const PAGES = new Map<string, PageConfig>([
 		bodyFile: "pages/index.html",
 		script: "/app.js",
 		title: "DUAT Balance Tracker",
-		description: "Browse DUAT token holders, balances, and staking data from the Hive blockchain Honeycomb layer.",
+		description: "Browse DUAT token holder balances and staking data from the Ragnarok game on Hive blockchain.",
 		ogTitle: "DUAT Balance Tracker",
-		ogDescription: "Browse DUAT token holders, balances, and staking data from the Hive blockchain.",
+		ogDescription: "Browse DUAT token holder balances and staking data from the Ragnarok game on Hive.",
 	}],
 	["/info", {
 		bodyFile: "pages/info.html",

@@ -1,6 +1,6 @@
 # DUAT Snapshot
 
-Website for viewing and querying **DUAT** token balances on the Hive blockchain, using data extracted from the Honeycomb node and claim operations from HafSQL.
+Website for viewing and querying **DUAT** token balances from the Ragnarok game on the Hive blockchain.
 
 ## Requirements
 

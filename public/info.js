@@ -39,7 +39,7 @@ const renderOverview = (stats, meta) => {
 		createCard("Staked (Powered Up)", formatAmount(stats.totalPoweredUp, p)),
 		createCard("Governance Locked", formatAmount(stats.totalGov, p)),
 		createCard("Active Holders", formatNum(stats.holderCount)),
-		createCard("Honeycomb Node", stats.node),
+		createCard("DUAT Node", stats.node),
 		createCard("Protocol Version", stats.version ?? "unknown"),
 		createCard("Snapshot Date", new Date(meta.collectedAt).toLocaleDateString("en-US")),
 	);
